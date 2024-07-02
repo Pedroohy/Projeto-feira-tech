@@ -5,6 +5,14 @@
     margin: 0px;
 }
 
+:root {
+    --vermelho: #e60000;
+    --vermelho-escuro: #9e0000;
+    --preto: #000000;
+    --cinza: #191919;
+    --branco: #ffffff;
+}
+
 body {
     background-color: #191919;
     color: #ffffff;
@@ -16,11 +24,54 @@ header {
     margin-top: 40px;
 }
 
-main > p {
+main {
+    padding: 15px;
+}
+
+fieldset > p {
     text-align: center;
     font-size: 15px;
-    color: #ffffff5c;
+    color: var(--branco);
     margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+fieldset {
+    padding: 10px;
+    margin: 10px;
+    border-color: var(--vermelho);
+}
+
+legend {
+    color: var(--branco);
+    border: 1px solid var(--vermelho);
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--vermelho);
+    border-radius: 8px;
+    font-size: 18px;
+    width: 30%;
+}
+
+div.box {
+    background-color: var(--preto);
+    padding: 15px;
+    border-radius: 15px;
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+.link {
+    width: 30%;
+    margin-top: 30px;
+    text-align: center;
+    background-color: var(--vermelho);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
 }
 
 img {
@@ -31,4 +82,8 @@ img {
 a {
     text-decoration: none;
     color: #ffffff;
+}
+
+.link:hover {
+    background-image: linear-gradient(to right,  var(--vermelho-escuro), var(--vermelho), var(--vermelho-escuro));
 }

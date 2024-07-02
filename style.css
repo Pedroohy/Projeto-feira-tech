@@ -8,11 +8,17 @@
 :root {
     --amarelo: #eeff00;
     --amarelo-mais-escuro: #e6d324;
+    --vermelho: #e60000;
+    --vermelho-escuro: #9e0000;
+    --preto: #000000;
+    --cinza: #191919;
+    --branco: #ffffff;
 }
 body {
-    background-color: #191919;
+    background-color: var(--cinza);
     font-family: 'Courier New', Courier, monospace;
-    color: #ffffff;
+    color: var(--branco);
+   
 }
 
 main {
@@ -20,8 +26,8 @@ main {
 }
 
 h1 > img {
-    width: 60%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 400px;
     margin-right: 20px;
 }
 
@@ -33,18 +39,19 @@ header {
 fieldset {
     padding: 10px;
     margin: 10px;
-    border-color: #e60000;
+    border-color: var(--vermelho);
 }
 
 legend {
-    color: #ffffff;
-    border: 1px solid #e60000;
+    color: var(--branco);
+    border: 1px solid var(--vermelho);
     padding: 10px;
     margin-bottom: 20px;
     text-align: center;
-    background-color: #e60000;
+    background-color: var(--vermelho);
     border-radius: 8px;
     font-size: 18px;
+    width: 27%;
 }
 
 div {
@@ -57,10 +64,10 @@ div {
 }
 
 .inputuser {
-    color: #ffffff;
-    background-color: #000000;
+    color: var(--branco);
+    background-color: var(--preto);
     border: none;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--branco);
     outline: none;
     font-size: 15px;
     width: 100%;
@@ -79,10 +86,10 @@ div {
 .inputuser:focus ~ .labelinput, .inputuser:valid ~ .labelinput {
     top: -20px;
     font-size: 15px;
-    color: var(--amarelo);
+    color: var(--branco);
 }
 div.box {
-    background-color: #000000;
+    background-color: var(--preto);
     padding: 15px;
     border-radius: 15px;
     margin: auto;
@@ -95,25 +102,27 @@ div.nome {
 }
 
 #submit {
-    background-image: linear-gradient(to right,  #e60000, #e60000, #e60000);
-    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to right,  var(--vermelho), var(--vermelho), var(--vermelho));
+    width: 30%;
     border: none;
     padding: 15px;
     border-radius: 10px;
-    color: #ffffff;
+    color: var(--branco);
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
     cursor: pointer;
-    margin-top: 15px;
+    font-weight: bold;
 }
 
 #submit:hover {
-    background-image: linear-gradient(to right,  #9e0000, #e60000, #9e0000);
+    background-image: linear-gradient(to right,  var(--vermelho-escuro), var(--vermelho), var(--vermelho-escuro));
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--branco);
 }
 
 p {
