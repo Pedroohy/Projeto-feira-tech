@@ -8,11 +8,11 @@
 </head>
 <body>
     <header>
-        <h1><img src="imagens/skolteiros-removebg-preview.png" alt="solteiros"></h1>
+        <h1><img src="imagens/skolteiros-removebg-preview (1).png" alt="solteiros"></h1>
     </header>
     <main>
         <div class="box">
-            <form>
+            <form id="myForm">
                 <fieldset>
                     <legend>Cadastrar-se</legend>
                     <div class="inputbox">
@@ -25,10 +25,15 @@
                         <label for="number" class="labelinput">Idade</label>
                     </div>
                     
-                    <p><input type="submit" name="submit" id="submit"></p>
-                    <p><a href="cadastrofeito.html"> cadastro concluido </a></p>
+                    <p><input type="submit" name="submit" id="submit" value="Cadastrar"></p>
                 </fieldset>
             </form>
+            <script>
+                document.getElementById('myForm').addEventListener('submit', function(event) { 
+                    event.preventDefault();
+                    window.location.href = 'cadastrofeito.html'; 
+                });
+            </script>
         </div>
     </main>
     
